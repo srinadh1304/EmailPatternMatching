@@ -25,4 +25,5 @@ public class EmailValidator {
 
 		sc.close();
 	}
+	
 }
