@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class EmailValidator {
 
 	public static boolean validateEmail(String email) {
-		Pattern pattern = Pattern.compile("^[a-zA-Z]{3,}[@][a-zA-Z]{1,}");
+		Pattern pattern = Pattern.compile("^[a-zA-Z]{3,}[@][a-zA-Z]{1,}[.][a-z]{2,}");
 		Matcher matcher = pattern.matcher(email);
 		return matcher.matches();
 	}
